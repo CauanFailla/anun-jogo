@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lost Legacy</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <script src="https://kit.fontawesome.com/61ad81fb7b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+</head>
+<body onresize="redi()">
+    <header>
+        <section class="cabe">
+            <h1>The Lost Legacy</h1>
+            <i  onclick="navig()" id="burguer"  class="fa-solid fa-bars"></i>
+            <nav id="menu">
+                <a href="#">Home</a>
+                <a href="#">Jogos</a>
+                <a href="#">Suporte</a>
+                <button class="buttom" href="#">Compre agora</button>
+            </nav>
+            <div class="cel">
+                <div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="apres">
+            <div>
+                <h2>The Lost</h2>
+                <h1>Legacy</h1>
+                <img src="imagens/bau-de-tesouro (2).png" alt=""> <br>
+                <button class="buttom prin" href="#">Compre agora</button>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="hist">
+            <p>
+                No Mexico, Alejandro, que é um membro de uma sociedade secreta de caçadores de tesouros. Eles são conhecidos por viajar para lugares distantes e perigosos em busca de tesouros lendários e artefatos antigos. Alejandro é enviado em uma missão para encontrar um artefato lendário, que pode salvar o mundo, foi perdido há muito tempo em uma região selvagem e mal explorada. Mas tome cuidado, qualquer escolha pode mudar tudo.
+            </p>
+        </section>
+
+        <section class="infor">
+            <div class="intens">
+                <i class="fa-solid fa-computer icon_info"></i>
+                <h2>Motor grafico Ureal Ungine 5</h2>
+            </div>
+            <div class="intens">
+                <i class="fa-solid fa-mountain-sun icon_info"></i>
+                <h2>Faça as escolhas com sabedoria</h2>
+            </div>
+            <div class="intens">
+                <i class="fa-solid fa-landmark-dome icon_info"></i>
+                <h2>Uma historia emocionante</h2>
+            </div>
+            <div class="intens">
+                <i class="fa-solid fa-globe icon_info"></i>
+                <h2>Mundo aberto, com milhares de lugares para serem explorados</h2>
+            </div>
+            <div class="intens">
+                <i class="fa-solid fa-shield-halved icon_info"></i>
+                <h2>Batalhas incriveis</h2>
+            </div>
+            <div class="intens">
+                <i class="fa-solid fa-coins icon_info"></i>
+                <h2>O dinheiro é de extrema importância para o decorrer do jogo, economize-o bem.</h2>
+            </div>
+        </section>
+
+        <section class="for">
+            <form method="post" autocomplete="on" action="dados.php">
+                <h1>Seja avisado(a) sobre a data de lançamento.</h1>
+                <div>
+                    <input type="email" name="email" id="iemail" required placeholder="Email">
+                    <label for="iemail">Email</label>
+                </div>
+                <div>
+                    <input type="password" name="senha" id="isenha" minlength="8" required placeholder="Crie uma senha (8)">
+                    <label for="isenha">Senha:</label>
+                </div>
+                <input type="submit" value="Cadastrar-se">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Criador: Cauan Failla</p>
+        <p>Creditos icones:   <a href="https://www.flaticon.com/br/icones-gratis/tesouro" target="_blank" title="tesouro ícones">Tesouro ícones criados por dDara - Flaticon</a></p>
+      
+    </footer>
+
+    <script>
+        function navig() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+        
+        function redi() {
+            if (window.innerWidth >= '768') {
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>

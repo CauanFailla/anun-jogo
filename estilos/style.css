@@ -1,0 +1,407 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+:root {
+    --cor1: #03A64A;
+    --cor2: #025940;
+    --cor3: #04BF8A;
+    --cor4: rgb(187, 187, 187);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 2009px;
+    background-color: rgb(243, 242, 242);
+}
+
+body::-webkit-scrollbar {
+    width: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(113, 128, 113);
+    border-radius: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+header {
+    height: 670px;
+    background-image: url("../imagens/fundo_header.webp");
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.37);
+}
+
+.cabe {
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+}
+
+.cabe h1 {
+    font-size: 1.8em;
+    color: rgb(34, 34, 34);
+}
+
+.cabe h1:hover {
+    cursor: pointer;
+}
+
+header nav {
+    display: block;
+    margin-left: 20px;
+    margin-top: 1px;
+}
+
+header > .cabe > nav > a {
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(61, 61, 61);
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+}
+
+header > .cabe > nav > a:hover {
+    border-bottom: 1px solid #03682f;
+    color: black;
+    font-size: 0.9em;
+}
+
+header h1 {
+    font-family: 'EB Garamond', serif;
+    color: rgb(187, 187, 187);
+    
+}
+
+.buttom {
+    border-radius: 25px 0px 25px 0px;
+    background-color: rgb(245, 244, 244);
+    color: #058662;
+    padding: 13px 25px;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.prin {
+    padding: 17px 50px;
+    text-transform: uppercase;
+}
+
+.buttom:hover {
+    cursor: pointer;
+    background-color: #d8fcf2;
+    color: #032c0d;
+    border-radius: 0px 25px 0px 25px;
+}
+
+.apres {
+    text-align: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apres h2 {
+    padding-bottom: 5px;
+    font-size: 1.9em;
+    border-bottom: 0.5px solid rgb(19, 18, 18);
+}
+
+.apres h1 {
+    font-size: 4em;
+    color: rgb(41, 41, 41);
+    text-transform: uppercase;
+}
+
+i {
+    display: block;
+    color: #034012;
+}
+
+img {
+    margin-top: -13px;
+    width: 55%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    color: rgb(54, 54, 54);
+    text-indent: 20px;
+    text-align: center;
+}
+
+.hist {
+    margin: 30px auto;
+    max-width: 600px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+.infor {
+    align-self: center;
+    margin-top: 50px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 200px 200px;
+    gap: 50px 20px;
+}
+
+.intens {
+    position: relative;
+    background-color: var(--cor4);
+    border-radius: 5px;
+}
+
+.icon_info {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    color: rgb(29, 29, 29);
+}
+
+.intens h2 {
+    margin-top: 120px;
+    font-size: 1.1em;
+}
+
+label {
+    display: none;
+}
+
+.for {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.39);
+    margin-top: 50px;
+    height: 760px;
+    background-image: url('../imagens/hd-wallpaper-5858656_1920.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.for form {
+    background-color: rgba(255, 255, 255, 0.603);
+    border-radius: 20px;
+    padding: 10px;
+    height: 300px;
+}
+
+.for > form > h1 {
+    margin-bottom: 20px;
+}
+
+form > div > input{
+    margin: 8px 0px;
+    width: 400px;
+    height: 40px;
+    border: none;
+    padding-left: 10px;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+form input[type=submit] {
+    margin-top: 10px;
+    padding: 10px 30px;
+    border: none;
+    background-color: var(--cor2);
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 10px;
+}
+
+form input[type=submit]:hover {
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: rgb(24, 24, 24);
+    color: white
+}
+
+
+footer a {
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+#burguer {
+    display: none;
+}
+
+/*Media query*/
+
+/*celulares*/
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 560px;
+    }
+
+    header nav {
+        display: none;
+        margin-top: 20px;
+    }
+    header nav a {
+        display: block;
+        text-align: center;
+    }
+
+    .cabe {
+        display: block;
+        position: relative;
+    }
+
+    .cabe h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    nav .buttom {
+        display: none;
+    }
+
+    #burguer {
+        position: absolute;
+        left: 50%;
+        display: inline-block;
+        font-size: 1.5em;
+        color: white;
+    }
+
+    #burguer:hover {
+        cursor: pointer;
+    }
+
+    .apres h2 {
+        padding-bottom: 5px;
+        font-size: 1.5em;
+        border-bottom: 0.5px solid rgb(19, 18, 18);
+    }
+
+    .apres h1 {
+        font-size: 2.8em;
+    }
+
+    img {
+        margin-top: -13px;
+        width: 35%;
+    }
+
+    .prin {
+        padding: 12px 35px;
+        font-size: 0.9em;
+    }
+
+    main p {
+        font-size: 0.9em;
+    }
+
+    .hist {
+        max-width: 270px;
+    }
+
+    
+    .infor {
+        grid-template-columns: 280px;
+        height: 1600px;
+    }
+
+    .intens {
+        margin-top: 40px;
+        height: 200px;
+    }
+
+    .intens i {
+        font-size: 3.9em;
+    }
+    
+    .intens h2 {
+        font-size: 1em;
+    }
+
+    form > div > input{
+        margin: 8px 0px;
+        width: 270px;
+        height: 30px;
+        border: none;
+        padding-left: 10px;
+        border-radius: 10px;
+        font-size: 1em;
+    }
+
+    .for form {
+        background-color: rgba(255, 255, 255, 0.603);
+        border-radius: 20px;
+        padding: 5px;
+        height: 300px;
+    }
+}
+
+/*tablets*/
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .infor {
+        grid-template-columns: 300px 300px;
+        height: 900px;
+    }
+
+    .intens {
+        margin-top: 40px;
+        height: 200px;
+    }
+
+    .intens i {
+        font-size: 3.9em;
+    }
+    
+    .intens h2 {
+        font-size: 1em;
+    }
+
+    form > div > input{
+        margin: 8px 0px;
+        width: 270px;
+        height: 30px;
+        border: none;
+        padding-left: 10px;
+        border-radius: 10px;
+        font-size: 1em;
+    }
+
+    .for form {
+        background-color: rgba(255, 255, 255, 0.603);
+        border-radius: 20px;
+        padding: 5px;
+        height: 300px;
+    }
+}
+
+
+
